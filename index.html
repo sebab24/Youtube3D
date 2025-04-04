@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos en GitHub</title>
+    <link rel="stylesheet" href="style.css">  <!--  Vincula a tu archivo CSS (crea style.css) -->
+    <!--  Font Awesome (opcional, para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts (opcional, para fuentes personalizadas)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">  <!--  Contenedor para centrar el contenido -->
+            <h1>[Tu Nombre] - Portafolio de Proyectos</h1>
+            <p>[Breve descripción sobre ti o tu enfoque.  Ej: Desarrollador web apasionado por...]</p>
+            <a href="[Tu perfil de GitHub]" class="btn btn-github" target="_blank">
+                <i class="fab fa-github"></i> Ver mi GitHub
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="container">
+            <h2>Mis Proyectos</h2>
+
+            <div class="projects-grid"> <!-- Usamos un grid (o flexbox) para el diseño -->
+
+                <!--  EJEMPLO DE UN PROYECTO (Repite esta estructura para cada proyecto) -->
+                <div class="project">
+                    <div class="project-image">
+                      <!--  Imagen del proyecto (reemplaza con la URL correcta)-->
+                        <img src="images/project1-placeholder.jpg" alt="[Nombre del Proyecto 1]">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="[URL del repositorio en GitHub]" target="_blank">[Nombre del Proyecto 1]</a></h3>
+                        <p>[Breve descripción del proyecto.  Sé conciso, destaca las tecnologías clave.]</p>
+                        <div class="project-tech">
+                            <span>[Tecnología 1]</span>  <!--  Ej: HTML -->
+                            <span>[Tecnología 2]</span>  <!--  Ej: CSS -->
+                            <span>[Tecnología 3]</span>  <!--  Ej: JavaScript -->
+                            <!-- ... más tecnologías ... -->
+                        </div>
+                         <a href="[URL del repositorio en GitHub]" class="btn btn-repo" target="_blank"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        <!--  Enlace opcional a una demo, si está disponible -->
+                        <a href="[URL de la demo, si existe]" class="btn btn-demo" target="_blank">Ver Demo</a>
+                    </div>
+                </div>
+
+                <!--  EJEMPLO DE OTRO PROYECTO (Duplica la estructura anterior) -->
+                  <div class="project">
+                    <div class="project-image">
+                        <img src="images/project2-placeholder.jpg" alt="[Nombre del Proyecto 2]">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="[URL del repositorio en GitHub]" target="_blank">[Nombre del Proyecto 2]</a></h3>
+                        <p>[Breve descripción del proyecto 2.]</p>
+                        <div class="project-tech">
+                            <span>[Tecnología 1]</span>
+                            <span>[Tecnología 2]</span>
+                             <span>[Tecnología 3]</span>
+                        </div>
+                         <a href="[URL del repositorio en GitHub]" class="btn btn-repo" target="_blank"><i class="fab fa-github"></i> Ver Repositorio</a>
+                        <a href="[URL de la demo, si existe]" class="btn btn-demo" target="_blank">Ver Demo</a>
+                    </div>
+                </div>
+
+                <!--  AÑADE MÁS PROYECTOS AQUÍ (copia y pega la estructura <div class="project">...</div>) -->
+
+            </div> <!-- .projects-grid -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© [Año] [Tu Nombre].  Todos los derechos reservados.</p>
+            <!--  Enlaces a redes sociales (opcional) -->
+            <div class="social-links">
+               <a href="[Tu perfil de GitHub]" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- <a href="[Tu perfil de LinkedIn]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="[Tu perfil de Twitter]" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                <!-- ... más enlaces ... -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

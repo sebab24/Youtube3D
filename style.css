@@ -1,0 +1,155 @@
+/*  Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif; /*  Usa la fuente Roboto (o la que hayas elegido) */
+    margin: 0; /*  Quita los márgenes por defecto del body */
+    line-height: 1.6; /*  Espaciado entre líneas */
+    color: #333; /*  Color de texto principal */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+.container {
+    width: 80%; /*  Ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /*  Centra el contenedor */
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center; /* Centra el texto */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+/* Estilos de los Botones */
+.btn {
+    display: inline-block; /* Permite establecer padding y margin */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.btn-github {
+    background-color: #24292e; /* Color de GitHub */
+}
+.btn-repo{
+	background-color: #6c757d;
+}
+
+.btn-demo{
+	background-color: #198754;
+}
+.btn-github:hover, .btn-repo:hover, .btn-demo:hover {
+    background-color: #555;
+}
+
+/*  Estilos del Grid de Proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+    gap: 30px; /* Espacio entre proyectos */
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Para que las esquinas de la imagen se redondeen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.project-image {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes (ajusta según tus necesidades) */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga */
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*  Asegura que la imagen cubra todo el contenedor, sin distorsionarse */
+	 object-position: top;
+    display: block; /*  Quita un pequeño espacio debajo de la imagen */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-info h3 a {
+    color: #333;
+    text-decoration: none;
+}
+.project-info h3 a:hover{
+	text-decoration: underline;
+}
+
+.project-tech {
+    margin-top: 15px;
+}
+
+.project-tech span {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em; /* Tamaño de los íconos */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ddd;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+    .container{
+        width: 90%;
+    }
+}
